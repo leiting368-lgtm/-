@@ -1,0 +1,6 @@
+{
+  "name": "三蛋phone",
+  "description": "三蛋phone：一款具有韩系高级感和乙女轻奢风格的恋爱角色扮演仿手机系统应用。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
