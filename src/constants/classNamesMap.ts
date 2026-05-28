@@ -1,6 +1,40 @@
-// 开发者类名词典 - 所有 dd- 前缀的类名注册于此
-// 格式：{ className: description }
-// 每次新增使用了 dd- 类名的组件时，必须同步添加一条记录
-const classNamesMap: Record<string, string> = {};
+const classNamesMap: Record<string, string> = {
+  'dd-desktop': '桌面容器',
+  'dd-desktop-icon': '桌面图标',
+  'dd-desktop-icon-label': '图标文字',
+  'dd-app': '应用容器根元素',
+  'dd-app-placeholder': '应用占位容器',
+  'dd-app-eggchat': '蛋蛋应用容器',
+  'dd-eggchat-nav': '蛋蛋底部导航栏',
+  'dd-nav-btn': '导航按钮',
+  'dd-eggchat-content': '蛋蛋内容区',
+  'dd-page-contacts': '蛋友页面',
+  'dd-page-message-list': '消息列表页面',
+  'dd-page-chat': '聊天页面',
+  'dd-page-user-info': '用户信息页面',
+  'dd-page-settings': '设置页面',
+  'dd-page-title': '页面标题',
+  'dd-app-global-settings': '全局设置应用容器',
+  'dd-settings-section': '设置区块',
+  'dd-btn': '通用按钮',
+  'dd-btn-export': '导出按钮',
+  'dd-btn-import': '导入按钮',
+  'dd-btn-initialize': '初始化按钮',
+  'dd-btn-danger': '危险按钮（红色）',
+  'dd-warning-text': '警告文字',
+  'dd-app-api-config': 'API设置应用容器',
+  'dd-config-field': '配置字段容器',
+  'dd-input': '通用输入框',
+  'dd-range': '滑动条',
+  'dd-config-actions': '配置操作区',
+  'dd-btn-save': '保存按钮',
+  'dd-page-presets': '预设列表页',
+  'dd-empty-text': '空数据提示',
+  'dd-preset-item': '预设条目',
+  'dd-preset-name': '预设名称',
+  'dd-btn-apply': '应用预设按钮',
+  'dd-btn-delete': '删除预设按钮',
+  'dd-app-beautify': '美妆蛋应用容器',
+};
 
 export default classNamesMap;
