@@ -12,12 +12,17 @@ const EggChat: React.FC = () => {
   const [subPage, setSubPage] = useState<SubPage>('contacts');
   const activeChatId = useChatStore((s) => s.activeChatId);
 
+  const goToChat = (contactId: string) => {
+    useChatStore.getState().setActiveChat(contactId);
+    setSubPage('chat');
+  };
+
   const renderSubPage = () => {
     switch (subPage) {
       case 'contacts':
-        return <ContactsPage />;
+        return <ContactsPage onGoToChat={goToChat} />;
       case 'message-list':
-        return <MessageListPage />;
+        return <MessageListPage onGoToChat={goToChat} />;
       case 'chat':
         return activeChatId ? <ChatPage /> : <div>请选择聊天</div>;
       case 'user-info':
@@ -25,7 +30,7 @@ const EggChat: React.FC = () => {
       case 'settings':
         return <SettingsPage />;
       default:
-        return <ContactsPage />;
+        return <ContactsPage onGoToChat={goToChat} />;
     }
   };
 

@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import useApiConfigStore from './store/apiConfigStore';
 import usePresetsStore from './store/presetsStore';
+import PresetsPage from './pages/presets';
 
 const ApiConfig: React.FC = () => {
+  const [subPage, setSubPage] = useState<'main' | 'presets'>('main');
   const store = useApiConfigStore();
+
+  if (subPage === 'presets') {
+    return <PresetsPage onBack={() => setSubPage('main')} />;
+  }
 
   return (
     <div className="dd-app-api-config">
@@ -41,6 +47,7 @@ const ApiConfig: React.FC = () => {
             });
           }
         }}>保存为预设</button>
+        <button className="dd-btn dd-btn-preset-list" onClick={() => setSubPage('presets')}>预设列表</button>
       </div>
     </div>
   );

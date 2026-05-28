@@ -35,6 +35,22 @@ const classNamesMap: Record<string, string> = {
   'dd-btn-apply': '应用预设按钮',
   'dd-btn-delete': '删除预设按钮',
   'dd-app-beautify': '美妆蛋应用容器',
+  'dd-bubble-user': '用户消息气泡（右侧）',
+  'dd-bubble-contact': '联系人消息气泡（左侧）',
+  'dd-chat-input': '聊天输入框',
+  'dd-btn-send': '发送消息按钮',
+  'dd-btn-ai-reply': '获取AI回复按钮',
+  'dd-contact-input': '添加联系人输入框',
+  'dd-contact-item': '联系人列表项',
+  'dd-contact-name': '联系人名称',
+  'dd-message-item': '消息列表项',
+  'dd-msg-contact-name': '消息列表中联系人名称',
+  'dd-msg-last-text': '消息列表中最后一条消息文本',
+  'dd-btn-preset-list': '预设列表导航按钮',
+  'dd-btn-back': '返回按钮',
+  'dd-avatar-placeholder': '面具头像占位符',
+  'dd-textarea': '通用文本域',
+  'dd-beautify-textarea': '美妆蛋CSS输入文本域',
 };
 
 export default classNamesMap;
